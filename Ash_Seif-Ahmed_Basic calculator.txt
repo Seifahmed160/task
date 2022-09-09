@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+
+    double numberOne;
+    double numberTwo;
+
+    printf("Enter The First Number");
+    scanf("%lf",&numberOne);
+
+    printf("Enter The Second Number");
+    scanf("%lf",&numberTwo);
+
+    printf("The Sum = %f\n",numberOne + numberTwo);
+    printf("The Difference = %f\n",numberOne - numberTwo);
+    printf("The Multiplication = %f\n",numberOne * numberTwo);
+    printf("The division = %f\n",numberOne / numberTwo);
+    return 0;
+}

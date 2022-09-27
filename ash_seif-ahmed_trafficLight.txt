@@ -1,0 +1,37 @@
+// link:https://www.tinkercad.com/things/es6YvdsJQTG-smashing-wluff-leelo/editel?sharecode=GhgaL0j94Y-UoeJpcC16rSLfW4NkKYEdKdIEqfd43Dw
+
+
+
+int Button=2;
+int Red=5;
+int Yellow=9;
+int Green=LED_BUILTIN;
+void setup() {
+pinMode(Button,INPUT);
+pinMode(Red,OUTPUT);
+pinMode(Yellow,OUTPUT);
+pinMode(Green,OUTPUT);
+}
+
+void loop() {
+  if (digitalRead(2)==HIGH)
+  {
+    digitalWrite(Red,HIGH);
+    delay(3500);
+    digitalWrite(Red,LOW);
+    digitalWrite(Yellow,HIGH);
+    delay(3500);
+    digitalWrite(Yellow,LOW);
+    digitalWrite(Green,HIGH);
+    delay(3500);
+    digitalWrite(Green,LOW);
+ 
+  }
+    else
+    {
+     digitalWrite(Red,LOW); 
+     digitalWrite(Yellow,LOW);
+     digitalWrite(Green,LOW);
+    }
+
+}
